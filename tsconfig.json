@@ -1,0 +1,43 @@
+{
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "**/lib",
+    "**/node_modules"
+  ],
+  "compilerOptions": {
+    "jsx": "preserve",
+    "lib": [
+      "es2015",
+      "dom"
+    ],
+    "declaration": false,
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": false,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "pretty": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "stripInternal": true,
+    "target": "es5",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true
+  }
+}
