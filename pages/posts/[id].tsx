@@ -30,6 +30,8 @@ export const Post: React.FC<IPostProps> = ({ postData }) => {
   );
 };
 
+export default Post;
+
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = getAllPostIds();
   return {
