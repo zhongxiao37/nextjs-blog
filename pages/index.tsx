@@ -6,7 +6,15 @@ import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
 
-export default function Home({ allPostsData }) {
+interface IHomeProps {
+  allPostsData: {
+    date: string;
+    title: string;
+    id: string;
+  }[];
+}
+
+export const Home: React.FC<IHomeProps> = ({ allPostsData }) => {
   const classes = useStyles();
   return (
     <Layout home={true}>
@@ -38,7 +46,9 @@ export default function Home({ allPostsData }) {
       </section>
     </Layout>
   );
-}
+};
+
+export default Home;
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
